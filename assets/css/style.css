@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(tomato,orange,orangered);
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+button {
+    margin-block: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 0 5px 5px 5px tomato;
+}
+
+img:first-of-type {
+    transition: transform 500ms,opacity 500ms,;
+    animation: popIn 2s linear infinite;
+}
+
+.rolls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rolle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 5px orangered;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.rolle p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rolle img {
+    width: 40px;
+    height: 40px;
+}
+
+.spin {
+    transform: rotate(780deg);
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
