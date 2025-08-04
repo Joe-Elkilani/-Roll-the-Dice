@@ -31,7 +31,7 @@ button {
 
 img:first-of-type {
     transition: transform 500ms,opacity 500ms,;
-    animation: popIn 2s linear infinite;
+    animation: popIn 2s linear;
 }
 
 .rolls {
